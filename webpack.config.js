@@ -3,13 +3,12 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const glob = require('glob');
 const path = require('path');
-
 const outputDirectory = "dist";
 
 var config = {
   entry: ['babel-polyfill',
-    './src/app.js',
-     './src/styles/layout.scss'
+    './src/client/app.js',
+    './src/client/styles/scss/main.scss'
   ],
   output: {
     path: __dirname + '/dist',
@@ -48,10 +47,10 @@ var config = {
             loader: "css-loader" // translates CSS into CommonJS
           },
           {
-            loader: "sass-loader", // compiles Sass to CSS,
+            loader: "sass-loader", // compiles Sass to CSS'
             options: {
-              includePaths: glob.sync('node_modules').map((d) => path.join(__dirname, d))
-            }
+             includePaths: glob.sync('node_modules').map((d) => path.join(__dirname, d))
+           }
           }
         ]
       },
@@ -76,11 +75,11 @@ var config = {
       }]
   },
   devServer: {
-    port: 8080,
+    port: 8081,
     open: true,
     proxy: {
       "/api/**": {
-        "target": "http://localhost:8080",
+        "target": "http://localhost:8081",
         "secure": false,
         "changeOrigin": true
       }
