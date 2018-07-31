@@ -1,5 +1,5 @@
 {
-  "name": "quizzapp",
+  "name": "quiz-rt-social",
   "version": "1.0.0",
   "description": "",
   "main": "./src/server/js/index.js",

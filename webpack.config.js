@@ -6,7 +6,7 @@ const outputDirectory = "dist";
 
 var config = {
   entry: ['babel-polyfill',
-    './src/app.js'
+    './src/client/app.js'
     // ,
     // './src/client/styles/scss/main.scss'
   ],
