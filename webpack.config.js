@@ -6,8 +6,9 @@ const outputDirectory = "dist";
 
 var config = {
   entry: ['babel-polyfill',
-    './src/client/js/index.js',
-    './src/client/styles/scss/main.scss'
+    './src/app.js'
+    // ,
+    // './src/client/styles/scss/main.scss'
   ],
   output: {
     path: __dirname + '/dist',
@@ -71,7 +72,7 @@ var config = {
       }]
   },
   devServer: {
-    port: 3000,
+    port: 8080,
     open: true,
     proxy: {
       "/api/**": {
@@ -90,7 +91,7 @@ var config = {
       Waves: 'node-waves',
     }),
     new HtmlWebpackPlugin({
-      template: './src/client/index.html'
+      template: './index.html'
     }),
     new CleanWebpackPlugin([outputDirectory]),
   ],
