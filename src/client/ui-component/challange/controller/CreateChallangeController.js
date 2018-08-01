@@ -6,7 +6,8 @@ export default class CreateChallangeController {
     CreateChallangeView.createSidebar();
   }
 
-  static saveChallangeDetails() {
+  static saveChallangeDetails(evnt) {
+    evnt.preventDefault();
     const topicName = document.getElementById('topic').value;
     const challangeName = document.getElementById('challangeName').value;
 
