@@ -5,6 +5,7 @@
 @import '@material/button/mdc-button';
 @import '@material/elevation/mdc-elevation';
 @import '@material/form-field/mdc-form-field';
+@import '@material/card/mdc-card';
 
 
 @font-face {
@@ -46,3 +47,5 @@
 
 @import "./customize";
 @import "./base";
+@import "./horizontalscrollablecontainer";
+@import "./dashboard";

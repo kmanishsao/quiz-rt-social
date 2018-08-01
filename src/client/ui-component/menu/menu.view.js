@@ -8,11 +8,11 @@ export const renderViewToContainer = (content, containerKey) => {
   const container = document.querySelector(containerKey)
   container.appendChild(content)
 }
-export const getMenuTemplate = (_menuData) => {
+export const getMenuTemplate = (menuData) => {
   let menuItemStr = ""
-  if (_menuData.length > 0) {
-    _menuData.forEach((item) => {
-      menuItemStr += `<a id="menu_${item.id}" class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
+  if (menuData.length > 0) {
+    menuData.forEach((item) => {
+      menuItemStr += `<a id="menu_${item.id}" class="headermenu mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
             <i class="material-icons mdc-list-item__graphic" aria-hidden="true">${item.Icon}</i>${item.Name}
           </a>`
     })
@@ -29,7 +29,6 @@ export const getMenuTemplate = (_menuData) => {
         <div id="icon-with-text-demo" class="mdc-list">
         ${menuItemStr}
         </div>
-
       </nav>
     </nav>
   </aside>`
