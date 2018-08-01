@@ -1,5 +1,5 @@
 import CreateChallangeView from '../view/CreateChallangeView';
-import CreateChallangeService from '../service/CreateChallangeService';
+// import CreateChallangeService from '../service/CreateChallangeService';
 
 export default class CreateChallangeController {
   static displaySideBar() {
@@ -64,7 +64,7 @@ export default class CreateChallangeController {
 "topicName": ${topicName},
 "challangeName": ${challangeName},
 "questions":[{
-              "q1": ${ques1},
+              "question": ${ques1},
               "options":[
                           "optionA": ${ques1opt1},
                           "optionB": ${ques1opt2},
@@ -74,7 +74,7 @@ export default class CreateChallangeController {
                 "answer": ${ques1ans}
               },
               {
-                "q1": ${ques2},
+                "question": ${ques2},
                 "options":[
                             "optionA": ${ques2opt1},
                             "optionB": ${ques2opt2},
@@ -84,7 +84,7 @@ export default class CreateChallangeController {
                   "answer": ${ques2ans}
                 },
                 {
-                  "q1": ${ques3},
+                  "question": ${ques3},
                   "options":[
                               "optionA": ${ques3opt1},
                               "optionB": ${ques3opt2},
@@ -94,7 +94,7 @@ export default class CreateChallangeController {
                     "answer": ${ques3ans}
                   },
                   {
-                    "q1": ${ques4},
+                    "question": ${ques4},
                     "options":[
                                 "optionA": ${ques4opt1},
                                 "optionB": ${ques4opt2},
@@ -104,7 +104,7 @@ export default class CreateChallangeController {
                       "answer": ${ques4ans}
                     },
                     {
-                      "q1": ${ques5},
+                      "question": ${ques5},
                       "options":[
                                   "optionA": ${ques5opt1},
                                   "optionB": ${ques5opt2},
@@ -114,7 +114,7 @@ export default class CreateChallangeController {
                         "answer": ${ques5ans}
                       },
                       {
-                        "q1": ${ques6},
+                        "question": ${ques6},
                         "options":[
                                     "optionA": ${ques6opt1},
                                     "optionB": ${ques6opt2},
@@ -124,7 +124,7 @@ export default class CreateChallangeController {
                           "answer": ${ques6ans}
                         },
                         {
-                          "q1": ${ques7},
+                          "question": ${ques7},
                           "options":[
                                       "optionA": ${ques7opt1},
                                       "optionB": ${ques7opt2},
@@ -136,6 +136,6 @@ export default class CreateChallangeController {
             ]
     }`;
     console.log(`challangeJsonObj is:${challangeJsonObj}`);
-    CreateChallangeService.storeChallange(challangeJsonObj);
+    // CreateChallangeService.storeChallange(challangeJsonObj);
   }
 }
