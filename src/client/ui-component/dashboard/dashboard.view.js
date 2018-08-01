@@ -7,6 +7,7 @@ const htmlToTemplate = (htmlstr) => {
 }
 export const renderViewToContainer = (content, containerKey) => {
   const container = document.querySelector(containerKey)
+  container.innerHTML = ""
   container.appendChild(content)
 }
 export const getpopularToicTemplate = (dataList, headingText) => {

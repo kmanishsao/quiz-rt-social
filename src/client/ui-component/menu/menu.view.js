@@ -12,7 +12,7 @@ export const getMenuTemplate = (menuData) => {
   let menuItemStr = ""
   if (menuData.length > 0) {
     menuData.forEach((item) => {
-      menuItemStr += `<a id="menu_${item.id}" class="headermenu mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
+      menuItemStr += `<a id="menu_${item.id}" onclick="loadPage('${item.Name}')" class="headermenu mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
             <i class="material-icons mdc-list-item__graphic" aria-hidden="true">${item.Icon}</i>${item.Name}
           </a>`
     })
