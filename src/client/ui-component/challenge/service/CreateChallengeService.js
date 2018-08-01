@@ -1,6 +1,6 @@
 // import { firebase } from 'firebase';
 
-export default class CreateChallangeService {
+export default class CreateChallengeService {
 //   constructor() {
 //     const config = {
 //       apiKey: 'AIzaSyCmo8KDSPyTWauu7z5dFhGUUi_cuTi-XF8',
@@ -13,10 +13,10 @@ export default class CreateChallangeService {
 //     //firebase.initializeApp(config);
 //   }
 
-//   static storeChallange(challangeJsonObj) {
+//   static storeChallenge(challengeJsonObj) {
 //     // Get a reference to the database service
 //     const database = firebase.database();
-//     database.ref(`users/${userId}`).set(challangeJsonObj);
+//     database.ref(`users/${userId}`).set(challengeJsonObj);
 //     console.log('Change has been created');
 //   }
 }

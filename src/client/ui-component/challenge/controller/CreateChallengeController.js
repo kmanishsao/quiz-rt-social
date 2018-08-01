@@ -1,15 +1,15 @@
-import CreateChallangeView from '../view/CreateChallangeView';
-// import CreateChallangeService from '../service/CreateChallangeService';
+import CreateChallengeView from '../view/CreateChallengeView';
+// import CreateChallengeService from '../service/CreateChallengeService';
 
-export default class CreateChallangeController {
+export default class CreateChallengeController {
   static displaySideBar() {
-    CreateChallangeView.createSidebar();
+    CreateChallengeView.createSidebar();
   }
 
-  static saveChallangeDetails(evnt) {
+  static saveChallengeDetails(evnt) {
     evnt.preventDefault();
     const topicName = document.getElementById('topic').value;
-    const challangeName = document.getElementById('challangeName').value;
+    const challengeName = document.getElementById('challengeName').value;
 
     const ques1 = document.getElementById('ques1').value;
     const ques1opt1 = document.getElementById('ques1opt1').value;
@@ -60,10 +60,10 @@ export default class CreateChallangeController {
     const ques7opt4 = document.getElementById('ques7opt4').value;
     const ques7ans = document.getElementById('ques7ans').value;
 
-    const challangeJsonObj = `{
-"challangeId":"",
+    const challengeJsonObj = `{
+"challengeId":"",
 "topicName": ${topicName},
-"challangeName": ${challangeName},
+"challengeName": ${challengeName},
 "questions":[{
               "question": ${ques1},
               "options":[
@@ -136,7 +136,7 @@ export default class CreateChallangeController {
                           }
             ]
     }`;
-    console.log(`challangeJsonObj is:${challangeJsonObj}`);
-    // CreateChallangeService.storeChallange(challangeJsonObj);
+    console.log(`challengeJsonObj is:${challengeJsonObj}`);
+    // CreateChallengeService.storeChallenge(challengeJsonObj);
   }
 }
