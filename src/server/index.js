@@ -13,4 +13,4 @@ require('babel-register')({
     presets: [ 'es2015' ]
  });
  
- require('./FirebaseAuth/server');
+ require('./server');

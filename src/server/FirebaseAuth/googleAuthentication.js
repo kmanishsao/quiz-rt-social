@@ -1,4 +1,4 @@
-import {config} from './config';
+import {config} from '../config';
 import firbaseAuth from 'firebaseauth';
 
 const firebase =new firbaseAuth(config.API_Key);
