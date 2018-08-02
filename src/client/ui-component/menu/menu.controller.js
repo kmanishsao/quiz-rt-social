@@ -39,7 +39,7 @@ const menuData = [{
 ]
 export const createMenu = () => {
   const menuContent = getMenuTemplate(menuData)
-  renderViewToContainer(menuContent, "body")
+  renderViewToContainer(menuContent, "header")
   const drawerEl = document.querySelector(".mdc-drawer")
   const drawer = new MDCTemporaryDrawer(drawerEl)
   document.querySelector(".sidemenu").addEventListener("click", function() {
